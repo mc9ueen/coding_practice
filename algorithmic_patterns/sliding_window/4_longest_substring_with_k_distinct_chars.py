@@ -1,4 +1,4 @@
-def longest_substring_with_k_distinct(line: str, target: int) -> int:
+def longest_substring_with_k_distinct_chars(line: str, target: int) -> int:
     start: int = 0
     max_length: int = 0
     char_frequency = dict()
@@ -20,9 +20,9 @@ def longest_substring_with_k_distinct(line: str, target: int) -> int:
 
 
 def test() -> None:
-    assert longest_substring_with_k_distinct('araaci', 2) == 4
-    assert longest_substring_with_k_distinct('araaci', 1) == 2
-    assert longest_substring_with_k_distinct('cbbebi', 3) == 5
+    assert longest_substring_with_k_distinct_chars('araaci', 2) == 4
+    assert longest_substring_with_k_distinct_chars('araaci', 1) == 2
+    assert longest_substring_with_k_distinct_chars('cbbebi', 3) == 5
 
 
 def main() -> None:
