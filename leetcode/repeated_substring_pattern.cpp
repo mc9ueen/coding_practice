@@ -2,8 +2,7 @@
 // and appending multiple copies of the substring together.
 
 #include <stdio.h>
-#include <string>
-#include <iostream>
+#include <string
 
 bool repeated_substring_pattern(std::string s) {
     int s_length = s.length();
@@ -17,8 +16,4 @@ bool repeated_substring_pattern(std::string s) {
         }
     }
     return false;
-}
-int main() {
-    std::cout << (repeated_substring_pattern("abaa") ? "true" : "false") << std::endl;
-    return 0;
 }
