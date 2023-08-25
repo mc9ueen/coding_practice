@@ -4,7 +4,6 @@ def two_sum_ii(numbers: list, target: int) -> list:
     right: int = len(numbers) - 1
 
     while left < right:
-        tmp = numbers[left] + numbers[right]
         if numbers[left] + numbers[right] == target:
             return [left + 1, right + 1]
         if numbers[left] + numbers[right] > target:
